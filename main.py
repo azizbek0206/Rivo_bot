@@ -6,16 +6,14 @@ import sys
 from config import BOT_TOKEN
 from handlers.start_hendlers import start_router
 from handlers.msg_hendlers import msg_router
-# from app import app
 
-# gunicorn main:app
-from flask import Flask
+# from flask import Flask
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
-@app.route('/')
-def home():
-    return "Hello!"
+# @app.route('/')
+# def home():
+#     return "Hello!"
 
 
 db = Dispatcher()
@@ -40,3 +38,4 @@ if __name__ == "__main__":
 
 
 
+# web: gunicorn app:app
