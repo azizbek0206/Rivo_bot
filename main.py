@@ -6,6 +6,9 @@ import sys
 from config import BOT_TOKEN
 from handlers.start_hendlers import start_router
 from handlers.msg_hendlers import msg_router
+# from app import app
+
+# gunicorn main:app
 
 db = Dispatcher()
 
@@ -25,4 +28,7 @@ if __name__ == "__main__":
         asyncio.run(main())
     except KeyboardInterrupt:
         logging.info("Bot tuxtadi.... ❌")
+
+
+
 
