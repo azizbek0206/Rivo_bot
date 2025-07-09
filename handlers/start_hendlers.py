@@ -6,7 +6,7 @@ start_router = Router()
 
 @start_router.message(CommandStart())
 async def start(message: Message):
-    username = message.from_user.username
+    username = message.from_user.id
     await message.answer(
         f"Assalomu alaykum {username} botimizga xush kelibsiz ! ✅ \n\n"
         f"Botimizga nima yozsangiz shuni qaytara oladi ! ✅ \n\n  "
