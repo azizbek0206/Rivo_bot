@@ -7,14 +7,6 @@ from config import BOT_TOKEN
 from handlers.start_hendlers import start_router
 from handlers.msg_hendlers import msg_router
 
-# from flask import Flask
-
-# app = Flask(__name__)
-
-# @app.route('/')
-# def home():
-#     return "Hello!"
-
 
 db = Dispatcher()
 
